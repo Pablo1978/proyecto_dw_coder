@@ -1,47 +1,35 @@
-@font-face {
-    font-family: "";
-    src: url();
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 2fr 2fr ;
-    grid-template-rows: 2fr 3fr 2fr ;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"
-    ;
-}
-header {
-    grid-area: header;
+img {
+    border-radius: 12px;
+    margin: 10px;
 }
 
- main {
-    grid-area: main;
-    
- }
-
- footer {
-    grid-area: footer ;
- }
- 
+.cards {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    margin: 5px;
+    flex-wrap: wrap;
+}
 
 main {
-    background-image: url(../assets/images/Fondo3.jpg);
+    background-image: url(../assets/images/Carpas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -49,22 +37,26 @@ nav ul {
     text-align: center;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
     text-decoration: none;
 }
 
 nav ul li {
     padding: 15px;
-    margin: 5px ;
-    color: rgb(13, 13, 212);
+    margin: 5px;
+    color: rgb(123, 16, 245);
     display: inline-block;
 }
 
-div {
+
+.productos {
     display: flex;
     justify-content: center;
     margin: 8px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
+
 }
 
 #legend {
@@ -75,7 +67,7 @@ div {
 }
 
 .dirección {
-    font-size: 1rem;
+    font-size: 0, 5rem;
     font-family: cursive;
     font-weight: bold;
 }
@@ -94,26 +86,35 @@ div {
 }
 
 h2 {
-    color: rgb(250, 219, 171);
+    color: rgb(219, 49, 20);
     text-align: center;
     font-family: cursive;
 }
 
 p {
     text-align: center;
-    color: white;
+    color: rgb(230, 169, 78);
     font-style: italic;
     font-weight: bolder;
-    font-size: 22px;
-}   
+    font-size: 15px;
+    margin: 5px;
+}
 
 footer {
     font-style: unset;
-    font-size: 1rem;
+    font-size: 0, 5rem;
     text-align: center;
-} 
+    flex-wrap: wrap;
+}
 
 footer ul {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+@media (max-width:480px) {
+    .carousel {
+        display: none;
+    }
+
 }
