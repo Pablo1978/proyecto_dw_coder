@@ -1,0 +1,25 @@
+{
+  "name": "mi_sitio",
+  "version": "1.0.0",
+  "description": "Proyecto desarrollador web coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilonpm.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pablo1978/proyecto_dw_coder.git"
+  },
+  "author": "Pablo Ariel Franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pablo1978/proyecto_dw_coder/issues"
+  },
+  "homepage": "https://github.com/Pablo1978/proyecto_dw_coder#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
