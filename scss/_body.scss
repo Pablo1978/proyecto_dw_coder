@@ -1,0 +1,88 @@
+img {
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+main {
+    background-image: url(../assets/images/Carpas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+nav ul {
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 15px;
+    margin: 5px;
+    color: rgb(123, 16, 245);
+    display: inline-block;
+}
+
+
+.productos {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    flex-wrap: wrap
+
+}
+
+#legend {
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(211, 192, 192)
+}
+
+.dirección {
+    font-size: 0, 5rem;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.formulario {
+    color: rgb(129, 204, 204);
+    font-weight: bold;
+
+}
+
+h2 {
+    color: $verde;
+    text-align: center;
+    font-family: cursive;
+}
+
+p {
+    text-align: center;
+    color: $naranja;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 5px;
+}
