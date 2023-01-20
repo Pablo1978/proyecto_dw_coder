@@ -14,10 +14,7 @@ img {
 
 main {
     background-image: url(../assets/images/Carpas.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    flex-wrap: wrap;
+    @include estilo-main
 }
 
 .menu {
@@ -79,8 +76,8 @@ h2 {
 }
 
 p {
-    text-align: center;
-    color: $color-parrafos;
+    text-align: map-get($estilos, "centro");
+    color: map-get($estilos, "color");
     font-style: italic;
     font-weight: bolder;
     font-size: 15px;
