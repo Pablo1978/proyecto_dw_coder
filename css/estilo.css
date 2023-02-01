@@ -16,6 +16,9 @@ img {
   margin: 5px;
   flex-wrap: wrap; }
 
+.cards img {
+  box-shadow: 7px 13px 37px #000; }
+
 main {
   background-image: url(../assets/images/Carpas.webp);
   background-repeat: no-repeat;
@@ -36,10 +39,19 @@ a:active {
   text-decoration: none; }
 
 nav ul li {
-  padding: 15px;
+  padding: 5px;
   margin: 5px;
-  color: #7b10f5;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #cbf0e4;
+  font-family: cursive;
+  border-color: #54e48b;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  box-shadow: 5px 10px 15px #99e48f; }
+
+nav ul li:hover {
+  background-color: #dbd13e; }
 
 .productos {
   display: flex;
